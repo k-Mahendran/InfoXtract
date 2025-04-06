@@ -1,97 +1,67 @@
-📄 InfoXtract – AI-Powered Document Automation
-🔍 Overview
-InfoXtract is an AI-powered document automation solution designed to streamline business operations by automatically extracting data from documents such as invoices, employee records, and HR policies. The project combines advanced document processing with a chatbot interface, reducing manual work, minimizing errors, and improving organizational efficiency.
+# 📄 InfoXtract – AI-Powered Document Automation
 
-🚀 Features
-📄 Automated Document Extraction
-Extracts key information from PDFs using OCR and NLP techniques.
+## 🚀 Table of Contents
+- [Overview](#-overview)
+- [Key Features](#-key-features)
+- [Tech Stack](#-tech-stack)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Folder Structure](#-folder-structure)
+- [API Documentation](#-api-documentation)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Contact](#-contact)
 
-🧠 Intelligent Classification
-Uses machine learning models to identify and categorize document types.
+## 🧠 Overview
+InfoXtract revolutionizes document processing by combining AI, OCR, and natural language understanding to automate:
+- Intelligent document classification
+- Accurate data extraction from various formats
+- Structured data organization
+- Conversational document querying
 
-💬 Chatbot Interface
-Enables users to query extracted data conversationally using an integrated chatbot.
+## ✨ Key Features
+### 🔍 Smart Document Processing
+- Supports PDF, scanned images, and digital documents
+- Auto-detects document types (invoices, policies, records)
+- Extracts key fields with >90% accuracy
 
-🗂️ Structured Storage
-Stores data in a structured format (CSV/JSON) for easy retrieval and further processing.
+### 💬 Conversational Interface
+- Natural language queries ("Show me invoices from Q2 2023")
+- Context-aware responses
+- Multi-document search capabilities
 
-⚡ Fast & Scalable
-Designed for high efficiency and scalability across various document types and volumes.
+### 📊 Data Management
+- Export to CSV/JSON
+- Custom data validation rules
+- Batch processing support
 
-🛠️ Tech Stack
-Language: Python
+## 🛠 Tech Stack
+| Component              | Technology                          |
+|------------------------|-------------------------------------|
+| **Core Language**      | Python 3.8+                         |
+| **OCR Engine**         | Tesseract 5.0                       |
+| **Machine Learning**   | Scikit-learn, Pandas, Numpy         |
+| **PDF Processing**     | PyMuPDF (Fitz)                      |
+| **Natural Language**   | NLTK, spaCy                         |
+| **Web Interface**      | Streamlit                           |
+| **Chatbot Framework**  | Custom Python NLP                   |
+| **Data Storage**       | Local (CSV/JSON), SQLite optional   |
 
-OCR: Tesseract
-
-NLP & ML: Scikit-learn, Pandas, Numpy
-
-PDF Handling: PyMuPDF
-
-Chatbot: Python + Streamlit
-
-UI Framework: Streamlit
-
-Storage: Local CSV/JSON output
-
-📂 Folder Structure
-bash
-Copy
-Edit
-InfoXtract/
-├── data/                  # Sample and processed documents
-├── model/                 # Trained classification models
-├── chatbot.py             # Chatbot interface logic
-├── classify.py            # Document classification logic
-├── extract.py             # Data extraction logic
-├── preprocess.py          # Preprocessing utilities
-├── app.py                 # Main Streamlit app
-├── requirement.txt        # Python dependencies
-└── README.md              # Project documentation
-▶️ How to Run
-Clone the Repository
-
-bash
-Copy
-Edit
-git clone https://github.com/your-username/InfoXtract.git
+## 📦 Installation
+```bash
+# Clone repository
+git clone https://github.com/yourusername/InfoXtract.git
 cd InfoXtract
-Install Requirements
 
-bash
-Copy
-Edit
-pip install -r requirement.txt
-Run the Application
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-bash
-Copy
-Edit
-streamlit run app.py
-✅ Use Cases
-Automate employee onboarding document processing.
+# Install dependencies
+pip install -r requirements.txt
 
-Extract data from invoices for financial reporting.
-
-Query HR policies using a conversational interface.
-
-Classify and archive documents based on content.
-
-📈 Future Enhancements
-Add support for Word and Excel files.
-
-Integrate cloud-based storage (e.g., Firebase, AWS S3).
-
-Improve chatbot intelligence with GPT-based models.
-
-Add a web-based dashboard for analytics.
-
-📜 License
-This project is licensed under the MIT License. See the LICENSE file for more information.
-
-🤝 Contributing
-Contributions are welcome! Please fork the repo and submit a pull request.
-
-📬 Contact
-Your Name
-📧 your.email@example.com
-🔗 [LinkedIn / Portfolio URL]
+# Install Tesseract OCR (system-level)
+# For Ubuntu:
+sudo apt install tesseract-ocr
+# For Mac:
+brew install tesseract
